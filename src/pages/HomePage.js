@@ -78,7 +78,7 @@ const HomePage = () => {
 
   return (
     <div className="container">
-      <div className="top-section">общий</div>
+      <div className="top-section">общ222ий</div>
       <div className={`top-section2 ${showDream ? "show" : ""}`}>
         {showDream && dream.toFixed(5)}
       </div>
