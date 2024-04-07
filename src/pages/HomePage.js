@@ -28,28 +28,6 @@ const HomePage = () => {
   const currentTime = new Date().getTime();
 
   useEffect(() => {
-    // Проверяем наличие объекта WebAppInitData и пользователя в нем
-    // Проверяем наличие объекта WebAppInitData и пользователя в нем
-    if (
-      window.Telegram &&
-      window.Telegram.WebApp &&
-      window.Telegram.WebApp.initData &&
-      window.Telegram.WebApp.initData.user
-    ) {
-      // Получаем объект пользователя
-      var user = window.Telegram.WebApp.initData.user;
-
-      // Проверяем, что это не бот
-      if (!user.is_bot) {
-        // Выводим id пользователя
-        console.log("User ID:", user.id);
-      } else {
-        console.log("This is a bot.");
-      }
-    } else {
-      console.log("No user data available.");
-    }
-
     let count = 0;
     let intervalID;
     let speedUp = speed ? 50 : 100;
